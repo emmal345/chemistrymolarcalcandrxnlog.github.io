@@ -9,7 +9,7 @@ set_site_information(author="Emma Lewis", description="Molarity calculator and l
     sources=["Periodic table (for atomic masses and element symbols)"], 
     planning=["Emma Lewis - CS1 Final Project0_Pick a Problem.pdf", 
               "Emma Lewis - CS1 Final Project1_Design (1)(1)(1).pdf"],
-    links=[],)
+    links=[https://github.com/emmal345/chemisty_molar_calc_rxn_checker_site.git],)
 
 #### list of elements ####
 ELEMENT_SYMBOLS = ["H", "He", "Li", "Be", "B", "C", "N", "O", "F", "Ne",

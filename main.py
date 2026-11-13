@@ -3,13 +3,13 @@ from dataclasses import dataclass
 from bakery import assert_equal
 from reactions_data import REACTIONS
 
-set_website_style("simple")
-hide_debug_information()
+set_website_titel("chemisty molar calc & reaction checke")
 set_site_information(author="Emma Lewis", description="Molarity calculator and logged reaction finder",
-    sources=["Periodic table (for atomic masses and element symbols)"], 
+    sources=["Periodic table (for atomic masses and element symbols)","Drafter docs"], 
     planning=["Emma Lewis - CS1 Final Project0_Pick a Problem.pdf", 
               "Emma Lewis - CS1 Final Project1_Design (1)(1)(1).pdf"],
-    links=[https://github.com/emmal345/chemisty_molar_calc_rxn_checker_site.git],)
+    links=["https://github.com/emmal345/chemisty_molar_calc_rxn_checker_site"],)
+hide_debug_information()
 
 #### list of elements ####
 ELEMENT_SYMBOLS = ["H", "He", "Li", "Be", "B", "C", "N", "O", "F", "Ne",
@@ -863,5 +863,6 @@ assert_equal(add_reaction(start_state(), "KOH, HCl", "KCl + H2O", True).state.re
 assert_equal(len(add_reaction(start_state(), "KOH, HCl", "  ", True).state.reactions), 8)
 assert_equal(reaction_list(start_state()).content[0], Header("All Logged Reactions"))
 assert_equal(len(reaction_list(start_state()).state.reactions), 8)
+set_website_style("simple")
 
 start_server(start_state())

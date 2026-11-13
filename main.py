@@ -1,7 +1,6 @@
 from drafter import *
 from dataclasses import dataclass
 from bakery import assert_equal
-from reactions_data.py import REACTIONS
 
 set_website_titel("chemisty molar calc & reaction checke")
 set_site_information(author="Emma Lewis", description="Molarity calculator and logged reaction finder",
@@ -10,6 +9,18 @@ set_site_information(author="Emma Lewis", description="Molarity calculator and l
               "Emma Lewis - CS1 Final Project1_Design (1)(1)(1).pdf"],
     links=["https://github.com/emmal345/chemisty_molar_calc_rxn_checker_site"],)
 hide_debug_information()
+
+#### list logged reactions ####
+REACTIONS: list[list] = [
+    ["HCl + NaOH -> NaCl + H2O", True],
+    ["HCl + NaHCO3 -> NaCl + H2O + CO2", True],
+    ["AgNO3 + NaCl -> AgCl + NaNO3", True],
+    ["HCl + Zn -> ZnCl2 + H2", True],
+    ["CaCl2 + Na2CO3 -> CaCO3 + NaCl", True],
+    ["CuSO4 + Zn -> ZnSO4 + Cu", True],
+    ["CH3COOH + NaHCO3 -> NaCH3COO + H2O + CO2", True],
+    ["KCl + NaNO3 -> No reaction", False],
+]
 
 #### list of elements ####
 ELEMENT_SYMBOLS = ["H", "He", "Li", "Be", "B", "C", "N", "O", "F", "Ne",

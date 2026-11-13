@@ -1,7 +1,7 @@
 from drafter import *
 from dataclasses import dataclass
 from bakery import assert_equal
-from reactions_data import REACTIONS
+from reactions_data.py import REACTIONS
 
 set_website_titel("chemisty molar calc & reaction checke")
 set_site_information(author="Emma Lewis", description="Molarity calculator and logged reaction finder",

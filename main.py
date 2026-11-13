@@ -2,7 +2,7 @@ from drafter import *
 from dataclasses import dataclass
 from bakery import assert_equal
 
-set_website_titel("chemisty molar calc & reaction checke")
+set_website_title("chemisty molar calc & reaction check")
 set_site_information(author="Emma Lewis", description="Molarity calculator and logged reaction finder",
     sources=["Periodic table (for atomic masses and element symbols)","Drafter docs"], 
     planning=["Emma Lewis - CS1 Final Project0_Pick a Problem.pdf", 

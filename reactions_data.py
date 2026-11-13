@@ -8,3 +8,4 @@ REACTIONS: list[list] = [
     ["CH3COOH + NaHCO3 -> NaCH3COO + H2O + CO2", True],
     ["KCl + NaNO3 -> No reaction", False],
 ]
+ 

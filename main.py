@@ -766,7 +766,8 @@ def reaction_list(state: State) -> Page:
         Button("Log another", log_form),
         Button("Home", index),
     ])
-    
+
+
 #### UNIT TESTS ####
 
 assert_equal(len(ELEMENT_SYMBOLS), 109)
